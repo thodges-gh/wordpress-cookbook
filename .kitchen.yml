@@ -1,17 +1,16 @@
+---
+driver:
+  name: vagrant
+  vagrantfiles:
+    - Vagrantfile
+
 driver_plugin: vagrant
 driver_config:
   require_chef_omnibus: true
-
+ 
 platforms:
-  - name: ubuntu-12.04
-    run_list:
-      - recipe[apt]
-  - name: ubuntu-14.04
-    run_list:
-      - recipe[apt]
-  - name: centos-6.6
-  - name: centos-5.11
-
+  - name: centos-7.2
+ 
 suites:
   - name: default
     run_list:
